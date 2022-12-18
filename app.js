@@ -19,6 +19,7 @@ app.use((req, res, next) => {
 
 app.get("/user_tb", UserController.user_tb);
 app.post("/create/user", UserController.createUser);
+app.post("/login/user", UserController.login);
 app.get("/get/all/users", UserController.getAll);
 
 app.get("/use/param/:id", (req, res) => {
